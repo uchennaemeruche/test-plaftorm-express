@@ -1,0 +1,9 @@
+name: app
+type: 'nodejs:16'
+disk: 512
+web:
+  commands:
+    start: NODE_ENV=production npm run start
+  
+  hooks:
+    build: npm run build
